@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chainsaw Man futa</title>
+  </head>
+  <body>
+    <h1>Chainsaw Man futa</h1>
+    <p>
+      Futa is a term used in anime and manga to describe a character who has
+      both male and female sexual characteristics. In the context of Chainsaw
+      Man, there are no official characters that are classified as futa.
+      However, fans of the series may create their own fan art or fan fiction
+      that features futa characters based on the existing characters in the
+      series. It is important to note that these fan creations are not part of
+      the official Chainsaw Man canon and should be viewed as separate from the
+      original story.
+    </p>
+
+    <div>
+      <button>
+        <select name="futa-characters" id="futa-characters">
+        <option value="">-- Select --</option>
+        <option value="Power">Power</option>
+        <option value="Makima">Makima</option>
+        <option value="Reze">Reze</option>
+        <option value="mitaka">Mitaka</option>
+      </select>
+      </button>
+    </div>
+
+    <div id="image-container" style="margin-top: 20px;">
+      <img id="character-image" src="" alt="Selected Character" style="max-width: 300px; display: none;">
+    </div>
+
+    <script>
+      var imageUrls = {
+        Power: 'https://th.bing.com/th/id/OIP.UoMk1bk_whRUT-izMauqcAHaKd?w=186&h=263&c=7&r=0&o=7&pid=1.7&rm=3',
+        Makima: 'https://wimg.rule34.xxx/thumbnails/3870/thumbnail_1654efeca84b8fe3662ad3f4b661c646.jpg?16459336', 
+        Reze: 'https://wimg.rule34.xxx/thumbnails/1734/thumbnail_160f909e56d7d9e2415b229e18b7e573.jpg?16182704', 
+        mitaka: 'https://wimg.rule34.xxx/thumbnails/2967/thumbnail_2887a9ed6e6e2089c00e39ca635f1de8.jpg?11421936' 
+      };
+
+      document.getElementById('futa-characters').addEventListener('change', function() {
+        var selected = this.value;
+        var img = document.getElementById('character-image');
+        if (selected && imageUrls[selected]) {
+          img.src = imageUrls[selected];
+          img.style.display = 'block';
+        } else {
+          img.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>

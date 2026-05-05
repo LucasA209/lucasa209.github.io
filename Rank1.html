@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frieren futa</title>
+  </head>
+  <body>
+    <h1>Frieren futa</h1>
+    <p>
+      Futa is a term used in anime and manga to describe a character who has
+      both male and female sexual characteristics. In the context of Frieren,
+      there are no official characters that are classified as futa. However,
+      fans of the series may create their own fan art or fan fiction that
+      features futa characters based on the existing characters in the series.
+      It is important to note that these fan creations are not part of the
+      official Frieren canon and should be viewed as separate from the original
+      story.
+    </p>
+  </body>
+
+  <div>
+    <button>
+      <select name="futa-characters" id="futa-characters">
+        <option value="">-- Select --</option>
+        <option value="frieren">Frieren</option>
+        <option value="Fern">Fern</option>
+        <option value="aura">Aura</option>
+      </select>
+    </button>
+  </div>
+
+  <div id="image-container" style="margin-top: 20px;">
+    <img id="character-image" src="" alt="Selected Character" style="max-width: 300px; display: none;">
+  </div>
+
+  <script>
+    var imageUrls = {
+      frieren: 'https://wimg.rule34.xxx/thumbnails/1198/thumbnail_47c144e1a50c8ef551da99c3e952756f.jpg?16828237',
+      Fern: 'https://wimg.rule34.xxx/thumbnails/1773/thumbnail_64ad586a219ca3f3aa4b07877fd61971.jpg?16308785',
+      aura: 'https://wimg.rule34.xxx/thumbnails/645/thumbnail_966096de6d162b8fa5caab4318582c40.jpg?12411479'
+    };
+
+    document.getElementById('futa-characters').addEventListener('change', function() {
+      var selected = this.value;
+      var img = document.getElementById('character-image');
+      if (selected && imageUrls[selected]) {
+        img.src = imageUrls[selected];
+        img.style.display = 'block';
+      } else {
+        img.style.display = 'none';
+      }
+    });
+  </script>
+</body>

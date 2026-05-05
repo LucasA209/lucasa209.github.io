@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Clover futa</title>
+  </head>
+  <body>
+    <h1>Black Clover futa</h1>
+    <p>
+      Futa is a term used in anime and manga to describe a character who has
+      both male and female sexual characteristics. In the context of Black
+      Clover, there are no official characters that are classified as futa.
+      However, fans of the series may create their own fan art or fan fiction
+      that features futa characters based on the existing characters in the
+      series. It is important to note that these fan creations are not part of
+      the official Black Clover canon and should be viewed as separate from the
+      original story.
+    </p>
+  </body>
+
+  <button>
+    <select name="futa-characters" id="futa-characters">
+       <option value="">-- Select --</option>
+      <option value="Noelle">Noelle Silva</option>
+      <option value="Secre">Secre Shallowtail</option>
+      <option value="Mimosa">Mimosa Vermillion</option>
+      <option value="Lily">Sister Lily</option>
+    </select>
+  </button>
+
+  <div id="image-container" style="margin-top: 20px;">
+    <img id="character-image" src="" alt="Selected Character" style="max-width: 300px; display: none;">
+  </div>
+
+  <script>
+    var imageUrls = {
+      Noelle: 'https://wimg.rule34.xxx//samples/2731/sample_67d3274dfbaf2a28bf1dd09a97c93ad0.jpg?16176706', // Add URL if available
+      Secre: 'https://wimg.rule34.xxx/thumbnails/2028/thumbnail_62a9d857ae746c72afb74fc8f677455f.jpg?12697905', // Add URL if available
+      Mimosa: 'https://wimg.rule34.xxx/thumbnails/1589/thumbnail_e53c911f04d2c9b5df2fb92fedab59dd.jpg?14596423', // Add URL if available
+      Lily: 'https://wimg.rule34.xxx//samples/2744/sample_82dcb593cf920c2b8e018e6b5f0ca030.jpg?12572093' // Add URL if available
+    };
+
+    document.getElementById('futa-characters').addEventListener('change', function() {
+      var selected = this.value;
+      var img = document.getElementById('character-image');
+      if (selected && imageUrls[selected]) {
+        img.src = imageUrls[selected];
+        img.style.display = 'block';
+      } else {
+        img.style.display = 'none';
+      }
+    });
+  </script>
+</html>

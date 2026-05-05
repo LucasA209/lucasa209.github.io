@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demonslayer futa</title>
+  </head>
+  <body>
+    <h1>Demon Slayer futa</h1>
+    <p>
+      Futa is a term used in anime and manga to describe a character who has
+      both male and female sexual characteristics. In the context of Demon
+      Slayer, there are no official characters that are classified as futa.
+      However, fans of the series may create their own fan art or fan fiction
+      that features futa characters based on the existing characters in the
+      series. It is important to note that these fan creations are not part of
+      the official Demon Slayer canon and should be viewed as separate from the
+      original story.
+    </p>
+
+    <button>
+      <select name="futa-characters" id="futa-characters">
+        <option value="">-- Select --</option>
+        <option value="Mitsuri">Mitsuri Kanroji</option>
+        <option value="nezuko">Nezuko Kamado</option>
+        <option value="shinobu">Shinobu Kocho</option>
+      </select>
+    </button>
+
+    <div id="image-container" style="margin-top: 20px;">
+      <img id="character-image" src="" alt="Selected Character" style="max-width: 300px; display: none;">
+      <p id="message" style="margin-top: 10px;"></p>
+    </div>
+
+    <script>
+      var imageUrls = {
+        Mitsuri: 'https://th.bing.com/th/id/OIP.zr_hR4gBZUuxOlpnxyGjSwHaI4?w=175&h=210&c=7&r=0&o=7&pid=1.7&rm=3',
+        nezuko: 'https://wimg.rule34.xxx/thumbnails/1919/thumbnail_689b4c19ec050df7da2ef00fecfc23e7.jpg?16729823', 
+        shinobu: 'https://wimg.rule34.xxx/thumbnails/2243/thumbnail_f601c0eb678d3595a501086da26e4838.jpg?15124361' // Add URL if available
+      };
+
+      document.getElementById('futa-characters').addEventListener('change', function() {
+        var selected = this.value;
+        var img = document.getElementById('character-image');
+        var message = document.getElementById('message');
+        console.log('Selected:', selected);
+        console.log('Image URL:', imageUrls[selected]);
+        if (selected && imageUrls[selected]) {
+          console.log('Setting image src to:', imageUrls[selected]);
+          img.src = imageUrls[selected];
+          img.style.display = 'block';
+        } else {
+          console.log('Hiding image');
+          img.style.display = 'none';
+        }
+        // Set message based on selected
+        if (selected === 'nezuko') {
+          message.textContent = '';
+        } else {
+          message.textContent = '';
+        }
+      });
+    </script>
+  </body>
+</html>
